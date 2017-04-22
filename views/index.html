@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What is up!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <audio id="audio" src="/01 Title Theme.mp3" controls="controls" autoplay>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+<!--    <canvas id="oscilloscope" width="800" height="300"></canvas>-->
+    <a-scene>
+<!--      <a-sphere id="sphere" position="-2 6.25 -7" radius="2.25" color="#FD242A"></a-sphere>-->
+      <a-box id="sphere" position="-2 6.25 -7" depth="1" height="1" width="1" color="#FD242A">
+      </a-box>
+      <a-sky color="black"></a-sky>
+    </a-scene>
+    <script src="/client.js"></script>
+  </body>
+</html>

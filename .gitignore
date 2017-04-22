@@ -1,0 +1,15 @@
+# mp3s 
+*.mp3
+
+# node packages
+node_modules
+
+# glitch stuff
+.data
+.env
+
+# mac stuff
+.DS*
+
+# logs
+*.log
