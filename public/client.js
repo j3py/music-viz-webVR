@@ -37,6 +37,13 @@ window.addEventListener('DOMContentLoaded', function() {
   var dataArray = new Uint8Array(bufferLength);
   analyser.getByteTimeDomainData(dataArray);
   
+  // method to return random int, inclusive
+  function getRandInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
   // get new random track when one ends
   aNode.addEventListener('ended', function() {
     let trackNum = getRandInt(0,5);
